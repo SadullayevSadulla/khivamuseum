@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>React App</title>
+
+    <!-- Inline styles to ensure preloader shows before bundle -->
+    <style>
+      /* Fullscreen white background like in the image */
+      html,body{
+        height:100%;
+        margin:0;
+        background:#ffffff;
+      }
+
+      /* Preloader overlay */
+      #preloader {
+        position: fixed;
+        inset: 0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background: #ffffff;
+        z-index: 99999;
+        transition: opacity 380ms ease, visibility 380ms ease;
+        opacity:1;
+        visibility:visible;
+      }
+
+      /* Hidden state (will be set by JS) */
+      #preloader.preloader--hide {
+        opacity:0;
+        visibility:hidden;
+        pointer-events:none;
+      }
+
+      /* Circle container */
+      .loader-wrap {
+        width: 120px;
+        height: 120px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+      }
+
+      /* The SVG is centered; we use stroke for ring and arc */
+      .loader-svg {
+        width: 120px;
+        height: 120px;
+        display:block;
+      }
+
+      /* Logo inside circle */
+      .loader-logo {
+        position:absolute;
+        width: 60px; /* adjust as needed */
+        height: auto;
+        display:block;
+        pointer-events:none;
+      }
+
+      /* Rotate animation for the arc */
+      @keyframes rotate {
+        to { transform: rotate(360deg); }
+      }
+
+      .arc {
+        transform-origin: 50% 50%;
+        animation: rotate 1.6s linear infinite;
+      }
+
+      /* small shadow/soft highlight like in the example */
+      .ring {
+        filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+      }
+
+      /* Respect reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .arc { animation: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Preloader: shows immediately while JS bundles load -->
+    <div id="preloader" role="status" aria-live="polite" aria-label="Sahifa yuklanmoqda">
+      <div class="loader-wrap" aria-hidden="false">
+        <!-- SVG: outer faint ring + arc -->
+        <svg class="loader-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <!-- faint outer ring -->
+          <circle class="ring" cx="60" cy="60" r="46" fill="none" stroke="#f3f4f6" stroke-width="3" />
+          <!-- rotating arc -->
+          <!-- Use stroke-dasharray to make just an arc segment -->
+          <g class="arc">
+            <circle cx="60" cy="60" r="46" fill="none"
+              stroke="#ff7a1a" stroke-width="4" stroke-linecap="round"
+              stroke-dasharray="72 200" stroke-dashoffset="0" />
+          </g>
+        </svg>
+
+        <!-- Logo: put your logo image in public/logo.png (or change src) -->
+        <img class="loader-logo" src="logo.jpg" alt="Logo" />
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <!-- React bundle(s) will be injected here by build tool (CRA/Vite) -->
+  </body>
+</html>

@@ -1,0 +1,58 @@
+.mainBoy1 {
+    display: flex;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.mainBoy_img img {
+    width: 600px;
+    height: 425px;
+    border-radius: 10px;
+}
+
+.mainBoy_text h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #0f3940;
+}
+
+.mainBoy_text p {
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-top: calc(var(--spacing) * 7);
+    --tw-leading: 150%;
+    color: #022133;
+    line-height: 150%;
+    text-align: justify !important;
+}
+
+.main_btn123 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+    padding: 10px 20px;
+    height: auto;
+    background-color: #0f3940;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1.25;
+    transition: 0.3s;
+    margin-top: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.main_btn123:hover {
+    background-color: #1a5560;
+}
+
+.main_btn123active {
+    background-color: #0f3940;
+    transform: scale(0.95);
+}

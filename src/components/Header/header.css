@@ -1,0 +1,223 @@
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrap {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-selector {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.lang-btn img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    display: inline-block;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.arrow.open {
+    transform: rotate(-135deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    width: 130px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lang-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.lang-dropdown li:hover {
+    background: #f1f1f1;
+}
+
+.lang-dropdown img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.khiva {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.khiva_ay {
+    display: flex;
+    align-items: center;
+}
+
+.khiva_img,
+.khiva_img2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.khiva_img p,
+.khiva_img2 p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: black;
+    margin: 0;
+}
+
+.khiva_img span svg,
+.khiva_img2 span svg {
+    width: 20px;
+    height: 20px;
+    color: #002b49;
+    transition: 0.2s ease;
+}
+
+
+.khiva_img:hover span svg,
+.khiva_img2:hover span svg {
+    color: #01558a;
+}
+
+.khiva_orta img {
+    width: 80px;
+    height: auto;
+}
+
+.khiva_icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.khiva_icon a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+
+
+.khiva_icon span {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: inherit;
+}
+
+.khiva_icon p {
+    color: #022133;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.khiva_icon p:hover {
+    color: #01558a;
+}
+
+.khiva_chiqta {
+    display: flex;
+    gap: 5px;
+}
+
+.khiva_chiqta .btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 143px;
+    height: 44px;
+    background-color: #277FB3;
+    color: white;
+    border: none;
+    border-radius: 100px 0 0 100px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.khiva_chiqta .btn1:hover {
+    background-color: #01558a;
+}
+
+.khiva_chiqta .btn1:active {
+    background-color: #277FB3;
+    transform: scale(0.95);
+}
+
+.khiva_chiqta .btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 44px;
+    background-color: #277FB3;
+    color: white;
+    border: none;
+    border-radius: 0 100px 100px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.khiva_chiqta .btn2:hover {
+    background-color: #01558a;
+}
+
+.khiva_chiqta .btn2:active {
+    background-color: #277FB3;
+    transform: scale(0.95);
+}
+
+.khiva_uz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

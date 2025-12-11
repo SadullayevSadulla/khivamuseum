@@ -1,0 +1,121 @@
+:root {
+    --titleFont: 'EB+Garamond';
+}
+
+.aloqa {
+    display: flex;
+    gap: 30px;
+    margin-block: 60px;
+}
+
+.aloqa_h1 h1 {
+    font-family: var(--titleFont);
+    font-size: 55px;
+    font-weight: 400;
+    color: #022133;
+    max-width: 628px;
+}
+
+.aloqa_input {
+    display: flex;
+    gap: 20px;
+}
+
+.lo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.in {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ki {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.in label {
+    font-family: sans-serif;
+    color: gray;
+}
+
+.in label span {
+    color: red;
+}
+
+.in input {
+    width: 200px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 16px;
+}
+
+.in textarea {
+    width: 460px;
+    height: 100px;
+}
+
+.aloqa_btn button {
+    width: 102px;
+    height: 44px;
+    background-color: #277FB3;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 380px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.aloqa_btn button:hover {
+    background-color: #01558a;
+}
+
+.aloqa_btn button:active {
+    background-color: #277FB3;
+    transform: scale(0.95);
+}
+
+.tel {
+    display: flex;
+    gap: 320px;
+}
+
+.tel4 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.5px;
+    font-family: Arial, sans-serif;
+}
+
+.c {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.c svg {
+    color: #002B36;
+}
+
+.c p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #002B36;
+    font-family: "Poppins", sans-serif;
+}
+
+.tel4 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #002B36;
+    font-family: "Poppins", sans-serif;
+}

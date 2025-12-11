@@ -1,0 +1,81 @@
+/* To'liq ekran overlay */
+.preloader-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  /* oq fon */
+  z-index: 99999;
+}
+
+/* o'lchami dinamik - inline style orqali beriladi */
+.loader-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVG o'lchami wrapperga mos */
+.loader-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+/* yupqa kulrang tashqi ring */
+.ring {
+  stroke: #f3f4f6;
+  stroke-width: 3;
+}
+
+/* Arc (faqat segment ko'rinishi uchun stroke-dasharray) */
+.arc {
+  stroke: #ff7a1a;
+  /* apelsin rang */
+  stroke-width: 2;
+  stroke-linecap: round;
+  /* segment hosil qilish */
+  stroke-dasharray: 72 260;
+  stroke-dashoffset: 0;
+}
+
+/* Guruhni aylantiramiz; transform-box va transform-origin SVG uchun kerak */
+.arc-group {
+  transform-box: fill-box;
+  /* kerakli xrom/ff qo'llab-quvvatlash */
+  transform-origin: 50% 50%;
+  /* markaz atrofida aylantirish */
+  animation: rotate 1.6s linear infinite;
+}
+
+/* O'rtadagi logo */
+.loader-logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  /* wrapperga nisbatan o'lcham; kerak bo'lsa 50% yoki px bilan sozlang */
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  /* agar doira shakl bo'lishini xohlasangiz; yo'q bo'lsa olib tashlang */
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Rotatsiya animatsiyasi */
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Agar foydalanuvchi reduced-motion so'rasa, animatsiyani o'chiramiz */
+@media (prefers-reduced-motion: reduce) {
+  .arc-group {
+    animation: none;
+  }
+}

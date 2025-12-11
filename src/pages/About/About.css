@@ -1,0 +1,49 @@
+.ikki {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)),
+    url('/src/assets/nzpkfm5qgjmve2v6b69y6a4b5ka66erc.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.about h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+  margin-block: 20px;
+}
+
+.about p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.main_card {
+  display: flex;
+  margin-top: 60px;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.main_left h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #0f3940;
+  margin: 0 0 24px 0;
+}
+
+.main_right{
+  margin-bottom: 40px;
+}

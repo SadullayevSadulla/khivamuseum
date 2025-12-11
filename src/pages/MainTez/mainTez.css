@@ -1,0 +1,107 @@
+.mainTez {
+    background-image: url('/src/assets/nzpkfm5qgjmve2v6b69y6a4b5ka66erc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainTez {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.salom {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #0f3940;
+    margin-block: 40px;
+}
+
+.mainTez img {
+    display: none;
+}
+
+.mainTez .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 153, 162, 0.55);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.mainTez_con {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.main_tez1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.main_tez {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    flex: 0 1 auto;
+    transition: 0.3s ease;
+}
+
+.main_tez:hover {
+    transform: translateY(-4px);
+}
+
+.main_tez_img {
+    font-size: 48px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 124px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.main_tez p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0 12px 0;
+    opacity: 0.95;
+}
+
+.main_tez h1 {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+}
+
+.stats_grid {
+    display: flex;
+    gap: 130px;
+}

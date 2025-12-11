@@ -1,0 +1,127 @@
+.mainG_h11 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainG_h11 h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #0f3940;
+}
+
+
+.main_btn123 {
+    display: flex;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #0f3940;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main_btn123:hover {
+    background-color: #1a5560;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.main_btn123:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mainCardla1 img {
+    width: 400px;
+    height: 300px;
+}
+
+.mainCardla {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.mainCardla1 {
+    flex: 0 0 calc(33.333% - 14px);
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.mainCardla1:hover {
+    transform: translateY(-5px);
+}
+
+.mainCardla1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.salomm {
+    padding: 15px;
+}
+
+.mainSvg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.mainSvg svg {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.mainSvg1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mainSvg1 svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.mainSvg > svg {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.mainCardla1_h1 h1 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.mainCardla1_h1 svg {
+    color: #0f3940;
+    margin-left: 5px;
+}
+
+.mainSvg{
+    display: flex;
+    justify-content: space-between;
+}
