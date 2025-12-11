@@ -1,5 +1,5 @@
 import React from "react";
-import "./MainTez.css";
+import "./mainTez.css";
 import CountUp from "../../components/CountUp";
 
 const MainTez = () => {
