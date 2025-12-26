@@ -11,7 +11,7 @@ const Main = () => {
         <main>
             <div className="main_card container">
                 <div className="main_left">
-                    <h1>{t('main_title')}</h1>
+                    <h1 className="yt">{t('main_title')}</h1>
                     <p>{t('main_description')}</p>
 
                     <div className="main_btnnn">

@@ -7,7 +7,7 @@
 
 .main_left h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    /* font-size: 50px; */
     font-weight: 400;
     color: #0f3940;
     margin: 0 0 24px 0;
@@ -102,7 +102,7 @@
     }
 
     .main_left h1 {
-        font-size: 36px;
+        font-size: 30px;
         max-width: 980px;
     }
 
@@ -123,5 +123,13 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+    }
+}
+
+@media (max-width:300px) {
+    .yt{
+        font-size: 10px;
+        font-weight: 400;
+        max-width: 230px;
     }
 }
