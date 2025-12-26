@@ -111,8 +111,8 @@
   background-color: rgb(182, 200, 215);
 }
 
-.google:active{
-  border:2px solid #277FB3;
+.google:active {
+  border: 2px solid #277FB3;
 }
 
 
@@ -123,19 +123,68 @@
   color: black;
 }
 
-.google_royhat p{
+.google_royhat p {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200px;
   color: black;
 }
 
-.google_royhat span{
+.google_royhat span {
   color: #277FB3;
 }
 
 
-.google_royhat a{
+.google_royhat a {
   text-decoration: none;
   color: #277FB3;
+}
+
+@media (max-width:370px) {
+  .profil_input input {
+    width: 210px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 15px;
+  }
+
+  .profil_btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 44px;
+    background-color: #277FB3;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+
+  }
+
+  .profil {
+    width: 320px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-block: 70px;
+    padding: 20px 30px;
+  }
+
+  .google_royhat p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;   
+    color: black;
+    font-size: 0.875rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
 }
