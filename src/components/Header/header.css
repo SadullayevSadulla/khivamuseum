@@ -154,11 +154,11 @@ header {
     .khiva_orta {
         order: 1;
     }
-    
+
     .khiva {
         order: 2;
     }
-    
+
     .khiva_uz {
         order: 3;
     }
@@ -256,7 +256,8 @@ header {
     justify-content: center;
     gap: 10px;
 }
-.burger_button{
+
+.burger_button {
     display: none;
     cursor: pointer;
     align-items: center;
@@ -307,6 +308,7 @@ header {
     from {
         transform: translateX(-100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -497,7 +499,9 @@ header {
     flex-shrink: 0;
 }
 
-.sidebar { padding-bottom: 40px; }
+.sidebar {
+    padding-bottom: 40px;
+}
 
 .sidebar-shop {
     display: flex;
@@ -557,6 +561,7 @@ header {
 
 
 @media (max-width:1030px) {
+
     .khiva_img p,
     .khiva_img2 p {
         font-size: 14px;
@@ -569,48 +574,55 @@ header {
 
 
 @media (max-width:1020px) {
-    .khiva_ay{
+    .khiva_ay {
         display: none;
     }
-    .header{
+
+    .header {
         display: flex;
 
         justify-content: space-between;
         align-items: center;
     }
-    .khiva_icon p{
+
+    .khiva_icon p {
         display: none;
     }
-    .khiva_orta img{
+
+    .khiva_orta img {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 90px;
         height: auto;
     }
-    .burger_button{
+
+    .burger_button {
         display: flex;
     }
+
     .sidebar-overlay {
         display: block;
     }
 }
 
 @media (max-width:760px) {
-    .lang-btn{
+    .lang-btn {
         display: none;
     }
-    .khiva_icon{
+
+    .khiva_icon {
         display: none;
     }
-    .header{
+
+    .header {
         display: flex;
         justify-content: space-between;
     }
 }
 
 @media (max-width:325px) {
-    .btn1{
+    .btn1 {
         width: 150px;
         height: 64px;
     }
@@ -625,5 +637,21 @@ header {
     .khiva_chiqta .btn2 {
         width: 50px;
         border-radius: 0 100px 100px 0;
+    }
+}
+
+@media (max-width:280px) {
+    .khiva_orta img {
+        width: 80px;
+        height: auto;
+    }
+
+    .sidebar-close {
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        padding: 20px 10px;
+        color: #002b49;
     }
 }

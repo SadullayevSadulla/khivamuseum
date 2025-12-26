@@ -107,7 +107,7 @@
 }
 
 @media (max-width:1020px) {
-    .mainTez  {
+    .mainTez {
         display: flex;
         gap: 70px;
     }
@@ -152,7 +152,17 @@
 }
 
 @media (max-width:355px) {
-    .salom{
+    .salom {
         font-size: 40px;
+    }
+}
+
+@media (max-width:280px) {
+    .salom {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: 400;
+        color: #0f3940;
+        margin-block: 40px;
     }
 }
