@@ -39,7 +39,6 @@ const MainBoy = () => {
                     </div>
                 </div>
                 <div className="mainBoy1">
-                        <img src={img2} alt="img" />
                     <div className="mainBoy_img">
                     </div>
                     <div className="mainBoy_text">
@@ -66,6 +65,7 @@ const MainBoy = () => {
                             </svg>
                         </button>
                     </div>
+                        <img src={img2} alt="img" />
                 </div>
                 <div className="mainBoy1">
                         <img src={img3} alt="img" />
