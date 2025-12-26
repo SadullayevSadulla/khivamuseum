@@ -105,3 +105,54 @@
     display: flex;
     gap: 130px;
 }
+
+@media (max-width:1020px) {
+    .mainTez  {
+        display: flex;
+        gap: 70px;
+    }
+
+    .mainTez_con {
+        padding: 40px 16px;
+    }
+
+    .main_tez1 {
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .main_tez {
+        flex: 0 1 45%;
+        max-width: 45%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main_tez_img {
+        width: 104px;
+        height: 104px;
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    .main_tez p {
+        font-size: 16px;
+        margin: 10px 0 8px 0;
+    }
+
+    .main_tez h1 {
+        font-size: 36px;
+    }
+
+    .stats_grid {
+        gap: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:355px) {
+    .salom{
+        font-size: 40px;
+    }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
+import img from "../assets/_1759731797457.png";
+import img1 from "../assets/khiva.jpg";
+import img2 from "../assets/_1756636849768.jpeg"; 
+import img3 from "../assets/art-2.jpg";
 import './elonlar.css';
-import img from "../../assets/_1759731797457.png";
-import img1 from "../../assets/khiva.jpg";
-import img2 from "../../assets/_1756636849768.jpeg"; 
-import img3 from "../../assets/art-2.jpg";
 const Elonlar = () => {
   return <>
     <section>

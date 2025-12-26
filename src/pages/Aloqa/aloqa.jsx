@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import "./aloqa.css"
 
 const Aloqa = () => {
+    const { t } = useTranslation();
     return <>
         <section>
             <div className="ikki">
@@ -12,40 +14,36 @@ const Aloqa = () => {
             <div className="aloqa container">
                 <div className="aloqa_cap">
                     <div className="aloqa_h1">
-                        <h1>Savolingiz bormi? Biz bilan bog‘laning!</h1>
+                        <h1>{t('aloqa')}</h1>
                     </div>
                     <div className="aloqa_input">
-                        <div className="lo">
-                            <div className="in">
-                                <label htmlFor="name">Ism <span>*</span></label>
-                                <input type="text" placeholder="Ismingizni kiriting" />
-                            </div>
-                            <div className="in">
-                                <label htmlFor="name">Telefon <span>*</span></label>
-                                <input type="number" placeholder="+998 93 663 07 85" />
-                            </div>
+                        <div className="in">
+                            <label htmlFor="name">{t('aloqa1')} <span>*</span></label>
+                            <input type="text" placeholder="Ismingizni kiriting" />
                         </div>
-                        <div className="lo">
-                            <div className="in">
-                                <label htmlFor="name">Ism <span>*</span></label>
-                                <input type="text" placeholder="Familyangizni kiriting" />
-                            </div>
-                            <div className="in">
-                                <label htmlFor="name">Telefon <span>*</span></label>
-                                <input type="email" placeholder="example@gmail.com" />
-                            </div>
+                        <div className="in">
+                            <label htmlFor="name">{t('aloqa1')} <span>*</span></label>
+                            <input type="number" placeholder="+998 93 663 07 85" />
                         </div>
-                    </div>
-                    <div className="in">
-                        <label for="message" style={{ marginBlock: "20px 5px" }}>Xabar <span>*</span></label>
-                        <textarea id="message" placeholder="Savolingiz/xabaringiz" style={{ padding: "12px" }}></textarea>
+                        <div className="in">
+                            <label htmlFor="name">{t('aloqa2')} <span>*</span></label>
+                            <input type="text" placeholder="Familyangizni kiriting" />
+                        </div>
+                        <div className="in">
+                            <label htmlFor="name">{t('aloqa3')} <span>*</span></label>
+                            <input type="email" placeholder="example@gmail.com" />
+                        </div>
+                        <div className="in">
+                            <label for="message" style={{ marginBlock: "0px 5px", }}>{t('aloqa4')} <span>*</span></label>
+                            <textarea id="message" placeholder="Savolingiz/xabaringiz" style={{ padding: "12px" }} className="tex"></textarea>
+                        </div>
                     </div>
                     <div className="aloqa_btn">
-                        <button>Yuborish</button>
+                        <button>{t('aloqa5')}</button>
                     </div>
                 </div>
-                <div className="aloqa_on">
-                    <div style={{ position: 'relative', overflow: 'hidden', width: '600px', height: '500px' }}>
+                <div className="aloqa_on container">
+                    <div style={{ overflow: 'hidden', }} className="n">
                         <iframe
                             src="https://yandex.uz/map-widget/v1/-/CLg7bRkj"
                             width="100%"

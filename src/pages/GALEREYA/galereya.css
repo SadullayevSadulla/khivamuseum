@@ -1,3 +1,15 @@
 .mainJ{
     margin-block: 50px;
 }
+
+@media (max-width: 800px) {
+    .mainG_imge {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        grid-auto-rows: 200px;
+    }
+
+    .mainG_imge_1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}

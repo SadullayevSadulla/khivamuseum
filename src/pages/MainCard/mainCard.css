@@ -125,3 +125,24 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 760px) {
+    .mainCardla1 {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .mainCardla1 img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 630px) {
+    .mainCardla1 {
+        flex: 0 0 100%;
+    }
+
+    .mainCardla1 img {
+        height: 250px;
+    }
+}
+

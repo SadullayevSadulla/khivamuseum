@@ -19,3 +19,22 @@
   color: #022133;
 }
 
+@media (max-width: 630px) {
+  .bit {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 20px;
+    margin-block: 50px;
+  }
+
+  .bit1 img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+  }
+
+  .bit1 h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+}
+

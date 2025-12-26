@@ -104,3 +104,17 @@
 .main_btn12:hover svg {
     transform: translateX(4px);
 }
+
+@media (max-width:500px) {
+    .mainG_imge {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+    }
+}
+
+@media (max-width:450px) {
+    .mainG_imge{
+        display: flex;
+        flex-direction: column;
+    }
+}

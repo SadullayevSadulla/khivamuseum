@@ -10,21 +10,23 @@ import img8 from "../../assets/_1764412194362.jpeg"
 import img9 from "../../assets/_1764238315477 (1).jpeg"
 import img10 from "../../assets/_1764012418417.jpeg"
 import img11 from "../../assets/_1764012010956.jpeg"
+import { useTranslation } from "react-i18next"
 
 const MainCard = () => {
+    const { t } = useTranslation();
     return <>
         <section>
             <div className="mainCard container">
                 <div className="mainCard_h1">
                     <div className="mainG_h11">
-                        <h1>Yangiliklar</h1>
+                        <h1>{t('Card')}</h1>
                         <div className="mainBT">
                             <button
                                 type="button"
                                 className="main_btn123"
                                 aria-label="Batafsil"
                             >
-                                Batafsil
+                                {t('Card1')}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="15"
@@ -53,7 +55,7 @@ const MainCard = () => {
                                 </div>
                             </div>
                             <div className="mainCardla1_h1">
-                                <h1>“Bir Vatan, bir el, bir bayroq!”
+                                <h1>{t('Card2')}
                                 </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
@@ -70,7 +72,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    World Travel Market London 2025” xalqaro ko‘rgazmasi
+                                    {t('Card3')}
                                 </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
@@ -87,7 +89,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    "Keksalar uchun turizm oyligi"
+                                    {t('Card4')}
                                 </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
@@ -104,7 +106,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    OZARBAYJONLIK OAV VAKILLARI XIVADA
+                                    {t('Card5')}
                                 </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
@@ -121,7 +123,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    YАNGI FILM SURATGA OLINMOQDA
+                                    {t('Card6')}
                                 </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
@@ -138,7 +140,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    XAYRLI ISHLARDAGI HAMKORLIK                                </h1>
+                                    {t('Card7')}                                </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
                         </div>
@@ -154,7 +156,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    3-dekabr — Xalqaro nogironligi bo'lgan shaxslar kuni                               </h1>
+                                   {t('Card8')}                              </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
                         </div>
@@ -170,7 +172,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    Muzey-qo'riqxona yangiliklari                               </h1>
+                                    {t('Card9')}                             </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
                         </div>
@@ -186,7 +188,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    OGOHLIK – DAVR TALABI                               </h1>
+                                    {t('Card10')}                             </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
                         </div>
@@ -202,7 +204,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    YАNGI KO‘RGAZMA ISН BOSНLADI                              </h1>
+                                    {t('Card11')}                             </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
                         </div>
@@ -218,7 +220,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    O‘QUV-TARG‘IBOT MASНG‘ULOTI                              </h1>
+                                    {t('Card12')}                              </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>
                         </div>
@@ -234,7 +236,7 @@ const MainCard = () => {
                             </div>
                             <div className="mainCardla1_h1">
                                 <h1>
-                                    YАNGI FILM SURATGA OLINMOQDA
+                                    {t('Card13')}
                                 </h1>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 8l4 4l-4 4M2 12h20" /></svg>
                             </div>

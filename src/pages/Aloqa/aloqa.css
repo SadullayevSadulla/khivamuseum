@@ -49,7 +49,7 @@
 }
 
 .in input {
-    width: 200px;
+    width: 220px;
     height: 20px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -57,7 +57,7 @@
 }
 
 .in textarea {
-    width: 460px;
+    width: 515px;
     height: 100px;
 }
 
@@ -69,9 +69,10 @@
     border-radius: 100px;
     color: white;
     margin-top: 10px;
-    margin-left: 380px;
+    /* margin-left: 380px; */
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom: 10px;
 }
 
 .aloqa_btn button:hover {
@@ -118,4 +119,96 @@
     font-weight: 400;
     color: #002B36;
     font-family: "Poppins", sans-serif;
+}
+
+.aloqa_input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+@media (max-width:1100px) {
+    .n iframe {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media (max-width:1025px) {
+    .aloqa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aloqa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aloqa_input {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 18px;
+    }
+
+    .aloqa_input .in {
+        flex: 1 1 calc(50% - 12px);
+        min-width: 220px;
+        box-sizing: border-box;
+    }
+
+    .aloqa_input .in.fullwidth,
+    .aloqa_input .in textarea,
+    .aloqa_input .in textarea+* {
+        width: 100%;
+        height: 400px;
+    }
+
+    .aloqa_input .in input,
+    .aloqa_input+* {
+        width: 100%;
+        height: 45px;
+        padding: 16px 18px;
+        box-sizing: border-box;
+    }
+
+    .in input {
+        width: 100%;
+    }
+
+    .aloqa_input .in textarea {
+        width: 100%;
+        height: 170px;
+        max-height: 400px;
+        border-radius: 0.375rem;
+        padding: 0.75rem;
+        margin-top: 0.25rem;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    .tel {
+        display: flex;
+        gap: 15px;
+    }
+
+    .n {
+        width: 100%;
+        height: 500px;
+    }
+
+    .aloqa_btn button {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width:455px) {
+    .tel {
+        display: flex;
+        flex-direction: column;
+    }
 }

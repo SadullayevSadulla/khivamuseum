@@ -21,10 +21,15 @@
     display: inline-block;
 }
 
+/* hide main language selector when sidebar is open */
+.lang-selector.hidden {
+    display: none;
+}
+
 .lang-btn {
     display: flex;
     align-items: center;
-    gap: 6px;
+    /* gap: 6px; */
     background: none;
     border: none;
     cursor: pointer;
@@ -50,9 +55,15 @@
     transform: rotate(-135deg);
 }
 
+.lang-selector {
+    position: relative;
+    z-index: 1000;
+    /* Add this line */
+}
+
 .lang-dropdown {
     position: absolute;
-    top: 110%;
+    top: 100%;
     left: 0;
     background: white;
     list-style: none;
@@ -61,6 +72,14 @@
     width: 130px;
     border-radius: 6px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+
+header {
+    position: relative;
+    z-index: 100;
 }
 
 .lang-dropdown li {
@@ -127,6 +146,22 @@
 .khiva_orta img {
     width: 80px;
     height: auto;
+    max-width: 760px;
+    margin-block: 5px;
+}
+
+@media (max-width: 770px) {
+    .khiva_orta {
+        order: 1;
+    }
+    
+    .khiva {
+        order: 2;
+    }
+    
+    .khiva_uz {
+        order: 3;
+    }
 }
 
 .khiva_icon {
@@ -220,4 +255,375 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+.burger_button{
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger_button svg {
+    color: #002b49;
+    transition: 0.2s ease;
+}
+
+.burger_button:hover svg {
+    color: #01558a;
+}
+
+/* Sidebar Styles */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000;
+    overflow-y: auto;
+    animation: slideInLeft 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* blue right border like in the mockup */
+.sidebar {
+    border-right: 6px solid #277FB3;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.sidebar-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 6px 8px;
+    color: #002b49;
+}
+
+
+.sidebar-close:hover {
+    color: #01558a;
+}
+
+.sidebar-lang-selector {
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.sidebar-header {
+    padding: 16px 18px;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.sidebar-lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #002b49;
+    width: 100%;
+}
+
+.sidebar-lang-btn img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.sidebar-lang-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    right: 20px;
+    background: white;
+    list-style: none;
+    padding: 6px 0;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+}
+
+.sidebar-lang-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.sidebar-lang-dropdown li:hover {
+    background: #f1f1f1;
+}
+
+.sidebar-lang-dropdown img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.sidebar-nav-link {
+    display: block;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #002b49;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border-bottom: 1px solid #eef2f4;
+    transition: 0.2s ease;
+}
+
+/* ensure pointer cursor even when links are disabled */
+.sidebar-nav-link,
+.sidebar-submenu-link,
+.sidebar-dropdown-toggle {
+    cursor: pointer;
+}
+
+.sidebar-nav-link:hover {
+    background-color: #f1f1f1;
+    color: #01558a;
+}
+
+.sidebar-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #002b49;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #eef2f4;
+    transition: 0.2s ease;
+}
+
+.sidebar-dropdown-toggle:hover {
+    background-color: #f1f1f1;
+    color: #01558a;
+}
+
+.dropdown-chevron {
+    display: inline-block;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-chevron.open {
+    transform: rotate(180deg);
+}
+
+.sidebar-submenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+}
+
+.sidebar-submenu-link {
+    display: block;
+    padding: 12px 24px 12px 48px;
+    text-decoration: none;
+    color: #002b49;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border-bottom: 1px solid #eef2f4;
+    transition: 0.2s ease;
+}
+
+.sidebar-submenu-link:hover {
+    background-color: #f1f1f1;
+    color: #01558a;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #f1f1f1;
+    flex-shrink: 0;
+}
+
+.sidebar { padding-bottom: 40px; }
+
+.sidebar-shop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eef2f4;
+}
+
+.sidebar-shop svg {
+    color: #002b49;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.sidebar-shop span {
+    color: #002b49;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.sidebar-socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-body {
+    overflow-y: auto;
+    flex: 1 1 auto;
+}
+
+.sidebar-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #277FB3;
+    border-radius: 50%;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.sidebar-socials a:hover {
+    background-color: #01558a;
+}
+
+.sidebar-socials svg {
+    color: white;
+}
+
+/* overlay close removed; close button lives inside sidebar header */
+
+
+
+@media (max-width:1030px) {
+    .khiva_img p,
+    .khiva_img2 p {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: sans-serif;
+        color: black;
+        margin: 0;
+    }
+}
+
+
+@media (max-width:1020px) {
+    .khiva_ay{
+        display: none;
+    }
+    .header{
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+    .khiva_icon p{
+        display: none;
+    }
+    .khiva_orta img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: auto;
+    }
+    .burger_button{
+        display: flex;
+    }
+    .sidebar-overlay {
+        display: block;
+    }
+}
+
+@media (max-width:760px) {
+    .lang-btn{
+        display: none;
+    }
+    .khiva_icon{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:325px) {
+    .btn1{
+        width: 150px;
+        height: 64px;
+    }
+
+    .khiva_chiqta .btn1 {
+        width: 100%;
+        border-radius: 100px 0 0 100px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .khiva_chiqta .btn2 {
+        width: 50px;
+        border-radius: 0 100px 100px 0;
+    }
 }
