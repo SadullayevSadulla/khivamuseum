@@ -157,7 +157,7 @@
     }
 }
 
-@media (max-width:280px) {
+@media (max-width:360px) {
     .salom {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 30px;

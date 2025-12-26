@@ -126,10 +126,13 @@
     }
 }
 
-@media (max-width:300px) {
-    .yt{
-        font-size: 10px;
+@media (max-width:360px) {
+    .main_left h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px !important;
         font-weight: 400;
-        max-width: 230px;
+        color: #0f3940;
+        margin: 0 0 24px 0;
     }
+
 }
