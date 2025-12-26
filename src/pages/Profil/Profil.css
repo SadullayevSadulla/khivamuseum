@@ -140,7 +140,68 @@
   color: #277FB3;
 }
 
-@media (max-width:370px) {
+@media (max-width:375px) {
+  .profil_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profil_input input {
+    width: 190px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 15px;
+  }
+
+  .profil_btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 44px;
+    background-color: #277FB3;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+
+  }
+
+  .profil {
+    width: 320px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-block: 70px;
+    padding: 20px 30px;
+  }
+
+  .google_royhat p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    color: black;
+    font-size: 0.875rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+}
+
+@media (max-width:360px) {
+  .profil_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .profil_input input {
     width: 210px;
     height: 30px;
@@ -180,7 +241,7 @@
   .google_royhat p {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200px;   
+    font-weight: 200px;
     color: black;
     font-size: 0.875rem;
     text-align: center;
