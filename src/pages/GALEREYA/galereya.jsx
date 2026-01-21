@@ -1,3 +1,4 @@
+import React from "react";
 import img1 from "../../assets/gallery-2.jpg";
 import img2 from "../../assets/gallery-5.jpg";
 import img3 from "../../assets/gallery-6.jpg";
@@ -81,7 +82,7 @@ const Gallery = () => {
             <div className="ikki">
                 <div className="about container">
                     <h1>Galereya</h1>
-                    <p>Bosh sahifa----- Galereya</p>
+                    <p>Bosh sahifa<div class="line"></div> Galereya</p>
                 </div>
             </div>
             <div className="mainJ container">

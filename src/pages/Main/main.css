@@ -7,7 +7,6 @@
 
 .main_left h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* font-size: 50px; */
     font-weight: 400;
     color: #0f3940;
     margin: 0 0 24px 0;
@@ -33,7 +32,7 @@
     cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
-    margin-top: 20px;
+    margin-block: 20px;
 }
 
 .main_btn:hover {
@@ -67,6 +66,7 @@
     line-height: 1.25;
     transition: 0.3s;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 500;
     white-space: nowrap;
 }

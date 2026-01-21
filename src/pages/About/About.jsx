@@ -9,10 +9,10 @@ const About = () => {
       <div className="ikki">
         <div className="about container">
           <h1>Muzey haqida</h1>
-          <p>Bosh sahifa ----- Muzey haqida</p>
+          <p>Bosh sahifa <div class="line"></div>Muzey haqida</p>
         </div>
       </div>
-      <Main/>
+      <Main />
     </div>
   );
 };

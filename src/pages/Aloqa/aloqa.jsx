@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./aloqa.css"
 
@@ -8,7 +9,7 @@ const Aloqa = () => {
             <div className="ikki">
                 <div className="about container">
                     <h1>Aloqa</h1>
-                    <p>Bosh sahifa----- Aloqa</p>
+                    <p>Bosh sahifa<div class="line"></div> Aloqa</p>
                 </div>
             </div>
             <div className="aloqa container">

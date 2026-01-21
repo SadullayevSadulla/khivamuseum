@@ -9,7 +9,7 @@ const Collection = () => {
             <div className="ikki">
                 <div className="about container">
                     <h1>Muzey kolleksiyasi</h1>
-                    <p>Bosh sahifa ----- Muzey kolleksiyasi</p>
+                    <p>Bosh sahifa <div class="line"></div> Muzey kolleksiyasi</p>
                 </div>
             </div>
             <h1 className='container sd'>Ekspozitsiyalar</h1>

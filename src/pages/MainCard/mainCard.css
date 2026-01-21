@@ -73,37 +73,31 @@
 }
 
 .salomm {
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
 }
 
 .mainSvg {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
+    gap: 5px;
     color: #666;
     font-size: 14px;
 }
 
-.mainSvg svg {
-    margin-right: 5px;
-    vertical-align: middle;
-}
 
 .mainSvg1 {
     display: flex;
     align-items: center;
     gap: 5px;
+    color: #666;
+    font-size: 14px;
 }
 
-.mainSvg1 svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-}
 
-.mainSvg > svg {
-    margin-right: 5px;
+.mainSvg>svg {
     width: 16px;
     height: 16px;
 }
@@ -118,12 +112,11 @@
 
 .mainCardla1_h1 svg {
     color: #0f3940;
-    margin-left: 5px;
 }
 
-.mainSvg{
-    display: flex;
-    justify-content: space-between;
+.mainSvg {
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 @media (max-width: 760px) {
@@ -145,4 +138,3 @@
         height: 250px;
     }
 }
-

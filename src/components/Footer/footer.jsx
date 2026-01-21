@@ -1,9 +1,13 @@
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import xiva from "../../assets/images.jpg"
+import xiva from "../../assets/images.jpg";
 import './footer.css';
 
 const Footer = () => {
     const { t } = useTranslation();
+
+    const [count, setCount] = useState(0);
+
     return (
         <footer className="footer">
             <div className="footer-container">
@@ -11,12 +15,18 @@ const Footer = () => {
                     <div className="footer-logo">
                         <img src={xiva} alt="Xiva muzeyi logotipi" />
                     </div>
-                    <h3>{t('For')}</h3>
+                        <h3>{t('For')}</h3>
                     <p>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            style={{ marginRight: "6px" }}
+                        >
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
                         </svg>
-                        {t('For1')}
+                    {t('For1')}
                     </p>
                     <button className="map-button">{t('For2')}</button>
                 </div>

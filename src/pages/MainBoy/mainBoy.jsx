@@ -1,3 +1,4 @@
+import React from "react";
 import img from "../../assets/art-2.jpg"
 import img2 from "../../assets/art-3.webp"
 import img3 from "../../assets/art-1.webp"
@@ -10,9 +11,7 @@ const MainBoy = () => {
         <section>
             <div className="mainBoy container">
                 <div className="mainBoy1">
-                        <img src={img} alt="img" />
-                    <div className="mainBoy_img">
-                    </div>
+                    <img src={img} alt="img" />
                     <div className="mainBoy_text">
                         <h1>{t('Boy')}</h1>
                         <p>{t('Boy1')}</p>
@@ -39,12 +38,10 @@ const MainBoy = () => {
                     </div>
                 </div>
                 <div className="mainBoy1">
-                        <img src={img2} alt="img" />
-                    <div className="mainBoy_img">
-                    </div>
+                    <img src={img2} alt="img" />
                     <div className="mainBoy_text">
                         <h1>{t('Boy3')}</h1>
-                        <p>I{t('Boy4')}</p>
+                        <p>{t('Boy4')}</p>
                         <button
                             type="button"
                             className="main_btn123"
@@ -68,9 +65,7 @@ const MainBoy = () => {
                     </div>
                 </div>
                 <div className="mainBoy1">
-                        <img src={img3} alt="img" />
-                    <div className="mainBoy_img">
-                    </div>
+                    <img src={img3} alt="img" />
                     <div className="mainBoy_text">
                         <h1>{t('Boy6')}</h1>
                         <p>{t('Boy7')}</p>

@@ -150,6 +150,7 @@ header {
     margin-block: 5px;
 }
 
+
 @media (max-width: 770px) {
     .khiva_orta {
         order: 1;

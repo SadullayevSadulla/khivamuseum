@@ -10,7 +10,7 @@ const Elonlar = () => {
       <div className="ikki">
         <div className="about container">
           <h1>E’lonlar</h1>
-          <p>Bosh sahifa----- E’lonlar</p>
+          <p>Bosh sahifa<div class="line"></div> E’lonlar</p>
         </div>
       </div>
       <div className="bit container">
