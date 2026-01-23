@@ -1,6 +1,5 @@
 import React from 'react';
 import "./collection.css";
-import "../MainBoy/mainBoy.css";
 import MainBoy from '../MainBoy/mainBoy';
 
 const Collection = () => {

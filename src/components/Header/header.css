@@ -29,7 +29,7 @@
 .lang-btn {
     display: flex;
     align-items: center;
-    /* gap: 6px; */
+    gap: 6px;
     background: none;
     border: none;
     cursor: pointer;
