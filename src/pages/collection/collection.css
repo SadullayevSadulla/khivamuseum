@@ -29,3 +29,11 @@
     color: white;
 }
 
+@media (max-width:355px) {
+    .about p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: white;
+    }
+}
