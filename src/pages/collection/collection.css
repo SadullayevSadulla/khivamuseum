@@ -37,3 +37,12 @@
         color: white;
     }
 }
+
+@media (max-width:315px) {
+    .about p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: white;
+    }
+}

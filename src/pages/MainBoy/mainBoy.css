@@ -5,9 +5,11 @@
 }
 
 .mainBoy1 img {
-    width: 100%;
+    width: 600px;
     height: 425px;
     border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .mainBoy_text h1 {
