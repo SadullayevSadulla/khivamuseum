@@ -1,12 +1,11 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom"
-import { ChevronDown } from "lucide-react"
-import "./menuBar.css"
-import { useTranslation } from "react-i18next"
+import { Link } from "react-router-dom";
+import { ChevronDown } from "lucide-react"; // Ikonka qo'shildi
+import "./menuBar.css";
+import { useTranslation } from "react-i18next";
 
 const MenuBar = () => {
-  const navigate = useNavigate()
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <header className="mnuH">
@@ -16,27 +15,31 @@ const MenuBar = () => {
           <Link to="/about" className="nav-link">{t('about')}</Link>
           <Link to="/collection" className="nav-link">{t('collection')}</Link>
           <Link to="/gallery" className="nav-link">{t('gallery')}</Link>
+          
+          {/* Dropdown qismi */}
           <div className="dropdown-container">
-            <div className="dropdown-label">
-              {t('select_news')} <span className="arrow"></span>
+           <div className="v">
+             <div className="dropdown-label">
+              <span className="dropdown-title">{t('news')}</span>
+              <ChevronDown className="chevron-icon" size={18} />
             </div>
-
-            {/* Ochiluvchi menyu */}
             <div className="dropdown-menu">
-              <Link to="/news" className="sidebar-submenu-link" onClick={() => setIsBurgerOpen(false)}>
-                <div className="menu-item">{t('news')}</div>
+              <Link to="/news" className="menu-item">
+                {t('news')}
               </Link>
               <div className="divider"></div>
-              <Link to="/announcements" className="sidebar-submenu-link" onClick={() => setIsBurgerOpen(false)}>
-                <div className="menu-item">{t('announcements')}</div>
+              <Link to="/announcements" className="menu-item">
+                {t('announcements')}
               </Link>
             </div>
+           </div>
           </div>
+
           <Link to="/contact" className="nav-link">{t('contact')}</Link>
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default MenuBar
+export default MenuBar;
