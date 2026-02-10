@@ -38,7 +38,7 @@ const MainBoy = () => {
                     </div>
                 </div>
                 <div className="mainBoy1">
-                    <img src={img2} alt="img" />
+                        <img src={img2} alt="img" />
                     <div className="mainBoy_text">
                         <h1>{t('Boy3')}</h1>
                         <p>{t('Boy4')}</p>

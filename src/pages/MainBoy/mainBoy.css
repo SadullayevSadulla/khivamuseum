@@ -9,6 +9,10 @@
     gap: 30px;
 }
 
+.mainBoy1:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 .mainBoy1 img {
     width: 600px;
     height: 425px;
