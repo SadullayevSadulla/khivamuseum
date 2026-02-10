@@ -1,3 +1,8 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-Garamond: 'EB+Garamond';
+}
+
 .mainTez {
     background-image: url('/src/assets/nzpkfm5qgjmve2v6b69y6a4b5ka66erc.jpg');
     background-size: cover;
@@ -17,7 +22,7 @@
 }
 
 .salom {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-family-Garamond);
     font-size: 50px;
     font-weight: 400;
     color: #0f3940;
@@ -87,6 +92,7 @@
 }
 
 .main_tez p {
+    font-family: var(--font-family);
     font-size: 18px;
     font-weight: 500;
     margin: 15px 0 12px 0;
@@ -94,8 +100,9 @@
 }
 
 .main_tez h1 {
-    font-size: 56px;
-    font-weight: 800;
+    font-family: var(--font-family);
+    font-size: 36px;
+    font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
     margin: 0;

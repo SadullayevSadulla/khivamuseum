@@ -1,287 +1,88 @@
-.headerInfo {
-    width: 100%;
-    max-width: 90%;
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-Garamond: 'EB+Garamond';
+}
+
+.container {
+    max-width: 1240px;
     margin: 0 auto;
-    margin-top: 30px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.headerSwiper {
-    width: 1300px;
-    height: 600px;
-    border-radius: 20px;
-}
-
-.slide {
+    padding: 0 16px;
     width: 100%;
-    height: 600px;
+    box-sizing: border-box;
+}
+
+
+.heroSwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    border-radius: 15px;
+    width: 100%;
+    height: 575px;
+    background-size: cover;
+    background-position: center;
     position: relative;
+    margin-block: 30px;
 }
 
-.slide::before {
-    content: '';
+.hero-slide::after {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    border-radius: 15px;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
 }
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.textBox {
+.hero-content {
     position: absolute;
-    top: 45%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: #fff;
-    max-width: 60%;
     z-index: 2;
+    left: 8%;
+    bottom: 20%;
+    color: #fff;
+    max-width: 800px;
 }
 
-.textBox h1 {
-    font-size: 55px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    line-height: 1.2;
-    color: white;
+.hero-content h1 {
+    font-family: var(--font-family-Garamond);
+    font-size: 64px;
+    font-weight: 500;
+    max-width: 822px;
 }
 
-.textBox p {
-    font-size: 20px;
+.hero-content p {
+    font-family: var(--font-family);
+    margin-top: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: 0.5px;
-    color: white;
+    gap: 8px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: #000;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+/* arrows */
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px;
+    width: 22px;
+    height: 20px;
+    color: black;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-size: 20px;
-}
 
+/* pagination */
 .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    opacity: 0.6;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .swiper-pagination-bullet-active {
     background: #fff;
-    opacity: 1;
 }
 
-.swiper-pagination {
-    bottom: 20px !important;
-    left: 13% !important;
-    transform: translateX(-50%);
-    width: auto !important;
-}
-
-@media (max-width: 980px) {
-    .headerInfo {
-        max-width: 100%;
-    }
-
-    .headerSwiper {
-        width: 100%;
-        height: 450px;
-        border-radius: 20px;
-    }
-
-    .textBox h1 {
-        font-size: 55px;
-        font-weight: 700;
-        margin-bottom: 15px;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        line-height: 1.2;
-        color: white;
-    }
-
-}
-
-
-
-@media (max-width: 760px) {
-    .headerInfo {
-        max-width: 100%;
-        margin-top: 15px;
-        padding: 0 10px;
-        border-radius: 15px;
-    }
-
-    .headerSwiper {
-        width: 100%;
-        height: 300px;
-        border-radius: 15px;
-    }
-
-    .slide {
-        height: 300px;
-    }
-
-    .textBox {
-        top: 40%;
-        left: 8%;
-        max-width: 85%;
-    }
-
-    .textBox h1 {
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-        line-height: 1.3;
-    }
-
-    .textBox p {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        width: 32px;
-        height: 32px;
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        font-size: 16px;
-    }
-
-    .swiper-pagination {
-        bottom: 15px !important;
-        left: 8% !important;
-    }
-}
-
-@media (max-width: 700px) {
-    .headerInfo {
-        max-width: 100%;
-        margin-top: 15px;
-        padding: 0 10px;
-        border-radius: 15px;
-    }
-
-    .headerSwiper {
-        width: 100%;
-        height: 300px;
-        border-radius: 15px;
-    }
-
-    .slide {
-        height: 300px;
-    }
-
-    .textBox {
-        top: 40%;
-        left: 8%;
-        max-width: 85%;
-    }
-
-    .textBox h1 {
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-        line-height: 1.3;
-    }
-
-    .textBox p {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        width: 32px;
-        height: 32px;
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        font-size: 16px;
-    }
-
-    .swiper-pagination {
-        bottom: 15px !important;
-        left: 8% !important;
-    }
-}
-
-@media (max-width:500px) {
-     .headerInfo {
-        max-width: 100%;
-        margin-top: 15px;
-        padding: 0 10px;
-        border-radius: 15px;
-    }
-
-    .headerSwiper {
-        width: 100%;
-        height: 300px;
-        border-radius: 15px;
-    }
-
-    .slide {
-        height: 300px;
-    }
-
-    .textBox {
-        top: 40%;
-        left: 8%;
-        max-width: 85%;
-    }
-
-    .textBox h1 {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-        line-height: 1.3;
-    }
-
-    .textBox p {
-        font-size: 14px;
-        margin: 0;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        width: 32px;
-        height: 32px;
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        font-size: 16px;
-    }
-
-    .swiper-pagination {
-        bottom: 15px !important;
-        left: 8% !important;
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
     }
 }

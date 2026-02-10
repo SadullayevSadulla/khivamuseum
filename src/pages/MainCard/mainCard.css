@@ -1,3 +1,8 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-Garamond: 'EB+Garamond';
+}
+
 .mainG_h11 {
     display: flex;
     align-items: center;

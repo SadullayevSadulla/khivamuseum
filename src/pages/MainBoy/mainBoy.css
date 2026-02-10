@@ -1,3 +1,8 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-Garamond: 'EB+Garamond';
+}
+
 .mainBoy1 {
     display: flex;
     margin-top: 60px;
@@ -13,19 +18,21 @@
 }
 
 .mainBoy_text h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-family-Garamond);
     font-size: 50px;
     font-weight: 400;
     color: #0f3940;
 }
 
 .mainBoy_text p {
+    font-family: var(--font-family);
+    font-weight: 500;
     text-overflow: ellipsis;
     white-space: normal;
     margin-top: calc(var(--spacing) * 7);
     --tw-leading: 150%;
     color: #022133;
-    line-height: 150%;
+    line-height: 1.5;
     text-align: justify !important;
 }
 

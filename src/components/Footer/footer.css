@@ -1,3 +1,8 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-Garamond: 'EB+Garamond';
+}
+
 .footer {
     background-color: #022133;
     color: white;
@@ -31,7 +36,7 @@
 
 .footer-section h3 {
     color: white;
-    font-family: 'Times New Roman', serif;
+    font-family: var(--font-family-Garamond);
     font-size: 23px;
     font-weight: 400;
     margin-bottom: 5px;
@@ -51,6 +56,7 @@
 }
 
 .footer-section p {
+    font-family: var(--font-family);
     color: gray;
     font-size: 15px;
     margin-bottom: 12px;

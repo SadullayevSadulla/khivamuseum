@@ -103,3 +103,17 @@
 .n button:active {
   transform: scale(0.95);
 }
+
+.user-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #777;
+}
+
+
+.user-card p {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #777;
+}

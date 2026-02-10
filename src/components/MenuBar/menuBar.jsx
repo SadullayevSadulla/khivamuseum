@@ -16,24 +16,22 @@ const MenuBar = () => {
           <Link to="/about" className="nav-link">{t('about')}</Link>
           <Link to="/collection" className="nav-link">{t('collection')}</Link>
           <Link to="/gallery" className="nav-link">{t('gallery')}</Link>
-          <li className="dropdown">
-            <div className="select-wrapper">
-              <select
-                className="select"
-                defaultValue=""
-                onChange={(e) => {
-                  if (e.target.value) {
-                    navigate(`/${e.target.value}`);
-                  }
-                }}
-              >
-                <option value="" disabled>{t('select_news')}</option>
-                <option value="news">{t('news')}</option>
-                <option value="announcements">{t('announcements')}</option>
-              </select>
-              <ChevronDown className="dropdown-icon" />
+          <div className="dropdown-container">
+            <div className="dropdown-label">
+              {t('select_news')} <span className="arrow"></span>
             </div>
-          </li>
+
+            {/* Ochiluvchi menyu */}
+            <div className="dropdown-menu">
+              <Link to="/news" className="sidebar-submenu-link" onClick={() => setIsBurgerOpen(false)}>
+                <div className="menu-item">{t('news')}</div>
+              </Link>
+              <div className="divider"></div>
+              <Link to="/announcements" className="sidebar-submenu-link" onClick={() => setIsBurgerOpen(false)}>
+                <div className="menu-item">{t('announcements')}</div>
+              </Link>
+            </div>
+          </div>
           <Link to="/contact" className="nav-link">{t('contact')}</Link>
         </nav>
       </div>

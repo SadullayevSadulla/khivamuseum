@@ -50,40 +50,71 @@
 .nav-link:hover::after {
     width: 100%;
 }
-
-.dropdown {
-    list-style: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100%;
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.select-wrapper {
-    position: relative;
-    display: inline-block;
+/* "YANGILIKLAR" yozuvi uchun */
+.dropdown-label {
+  color: black; /* To'q sariq rang */
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.select {
-    font-size: 16px;
-    font-weight: 700;
-    color: #032539;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px 25px 10px 10px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+.dropdown-label:hover {
+  color:   #e65100; 
 }
 
-.dropdown-icon {
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: #032539;
+.arrow {
+  font-size: 14px;
+}
+
+/* Menyuning o'zi */
+.dropdown-menu {
+  display: none; /* Dastlab yashirin */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2b7eb3; /* Rasmdagi moviy rang */
+  min-width: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Sichqoncha ustiga borganda menyuni ko'rsatish */
+.dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* Menyu elementlari */
+.menu-item {
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #1a5c8a; /* Tanlanganda biroz to'qroq rang */
+}
+
+/* O'rtadagi oq chiziq */
+.divider {
+  height: 1px;
+  background-color: white;
+  margin: 0 10px;
+  opacity: 0.8;
 }
 
 @media (max-width:1040px) {

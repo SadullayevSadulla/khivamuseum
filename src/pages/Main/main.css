@@ -1,3 +1,8 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-Garamond: 'EB+Garamond';
+}
+
 .main_card {
     display: flex;
     margin-top: 60px;
@@ -6,7 +11,7 @@
 }
 
 .main_left h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-family-Garamond);
     font-weight: 400;
     color: #0f3940;
     margin: 0 0 24px 0;
@@ -81,9 +86,10 @@
 }
 
 .main_left p {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-family);
     font-size: 18px;
-    line-height: 1.9;
+    font-weight: 500;
+    line-height: 1.5;
     color: #123b41;
     max-width: 720px;
     margin: 0;
