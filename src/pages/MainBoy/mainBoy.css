@@ -3,6 +3,12 @@
     --font-family-Garamond: 'EB+Garamond';
 }
 
+.mainBoy {
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+}
+
 .mainBoy1 {
     display: flex;
     margin-top: 60px;
