@@ -22,7 +22,7 @@ const HeaderInfo = () => {
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
-        pagination={{ clickable: true }}
+        pagination={{ clickable: false }}
         loop
         className="heroSwiper"
       >
