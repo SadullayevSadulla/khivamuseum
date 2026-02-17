@@ -9,8 +9,7 @@ const Aloqa = () => {
             <div className="ikki">
                 <div className="about container">
                     <h1>Aloqa</h1>
-                    <p>Bosh sahifa <span>Aloqa</span></p>
-                    <div className="line"></div>
+                    <p>Bosh sahifa <div className="line"></div> <span>Aloqa</span></p>
                 </div>
             </div>
             <div className="aloqa container">

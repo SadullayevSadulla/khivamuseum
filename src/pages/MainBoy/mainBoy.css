@@ -15,7 +15,7 @@
     gap: 30px;
 }
 
-.mainBoy1:nth-child(even) {
+.mainBoy:nth-child(even) {
     flex-direction: row-reverse;
 }
 
@@ -71,7 +71,7 @@
     background-color: #1a5560;
 }
 
-.main_btn123active {
+.main_btn123:active {
     background-color: #0f3940;
     transform: scale(0.95);
 }
