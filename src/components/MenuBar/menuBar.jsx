@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown } from "lucide-react"; // Ikonka qo'shildi
+import { ChevronDown } from "lucide-react"; 
 import "./menuBar.css";
 import { useTranslation } from "react-i18next";
 
